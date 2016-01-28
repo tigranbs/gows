@@ -19,7 +19,7 @@ func main() {
 			}
 		})
 
-		sock.On("disconnect", func() {
+		sock.On("disconnect", func(i_sock interface{}) {
 			fmt.Println("Disconnected")
 		})
 	})
